@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Turnos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Turnos</h1>
+    <div id="current-turn" class="turn-display">
+      <h2>Turno Actual: <span id="turn-number">0</span></h2>
+    </div>
+    <div id="last-turns" class="turn-display">
+      <h2>Últimos 3 Turnos:</h2>
+      <ul id="last-turns-list">
+        <!-- Turnos anteriores se mostrarán aquí -->
+      </ul>
+    </div>
+    <div id="turns-served" class="turn-display">
+      <h2>Turnos atendidos hoy: <span id="turns-served-number">0</span></h2>
+    </div>
+    <button id="next-turn-button">Siguiente Turno</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
